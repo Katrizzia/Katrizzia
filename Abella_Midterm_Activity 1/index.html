@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Student Profile Controller</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Interactive Student Profile Controller</h1>
+
+  <!-- Profile Card -->
+  <article id="profileCard" class="profile-card active"
+           data-student-id="2026-001"
+           data-status="active">
+    <h2 id="profileName">Maria Santos</h2>
+    <p id="profileProgram">BS Information Technology</p>
+    <p id="profileYear">3rd Year</p>
+    <p id="profileStatus">Active</p>
+    <div id="detailsPanel" class="details-panel">
+      <p id="studentIdDisplay">Student ID: 2026-001</p>
+    </div>
+  </article>
+
+  <!-- Control Panel -->
+  <div class="controls">
+    <p id="formMessage"></p>
+
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" placeholder="ENTER STUDENT NAME">
+
+    <label for="programInput">Program:</label>
+    <input type="text" id="programInput" value="BS Information Technology">
+
+    <label for="yearInput">Year level:</label>
+    <select id="yearInput">
+      <option value="1st Year">1st Year</option>
+      <option value="2nd Year">2nd Year</option>
+      <option value="3rd Year" selected>3rd Year</option>
+      <option value="4th Year">4th Year</option>
+    </select>
+
+    <label for="statusInput">Status:</label>
+    <select id="statusInput">
+      <option value="active" selected>active</option>
+      <option value="inactive">inactive</option>
+    </select>
+
+    <button id="updateBtn">Update Profile</button>
+    <button id="toggleDetailsBtn">Toggle Details</button>
+    <button id="themeBtn">Toggle Theme</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
